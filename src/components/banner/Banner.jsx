@@ -5,6 +5,7 @@ import axios from '../../axios'
 function Banner() {
 const [movie, setmovie] = useState()
   useEffect(() => {
+    console.log("useeffect");
 axios.get(`/trending/all/week?api_key=${API_KEY}&language=en-US`).then((response)=>{
   console.log(response.data.results[0]);
   setmovie(response.data.results[0])
