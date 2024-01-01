@@ -15,9 +15,15 @@
    width:80px;
 }
 .avatar {
-   position:fixed;
-   top:0;
-   right:20px;
-   width:80px;
-   
+   position: fixed;
+   top: 0;
+   right: 20px;
+   width: 80px;
+   max-width: 100%; /* Ensure the avatar doesn't exceed the width of its container */
+   box-sizing: border-box; /* Include padding and border in the width calculation */
+   border-radius: 50%; /* Make sure the avatar is circular if applicable */
+   overflow: hidden; /* Hide any content that might overflow */
+   border: 2px solid #fff; /* Example border styling, you can adjust as needed */
+   background-color: #fff; /* Example background color, you can adjust as needed */
 }
+
